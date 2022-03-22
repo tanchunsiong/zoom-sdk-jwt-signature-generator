@@ -22,10 +22,11 @@ The payload specification can be found on the [official zoom docs, auth for vSDK
 > app_key is the SDK Key found in the App Dashboard.
 >
 >version should be set to 1.
+>
 >role_type indicates the user’s role in a session: host or participant. As of the Video SDK version 1.2.0 and above, this is required for all users. You will get an invalid parameter error in the onError callback if this is not provided. This prevents a random participant from gaining host privileges if the host loses access. The role_type values are:
 >
->
 >0 — The user is a participant. Other users should be assigned to this role.
+>
 >1 — The user is the host. If you want the original host of the session to be able to regain host privileges after leaving and rejoining the session, you should not assign this to more than one user per session. If the user with this role leaves the session and rejoins, they will regain host privileges. user_identity is an available field to uniquely specify a user in your system. The maximum length is 15 characters. This field is optional.
 >
 >session_key is an available field to uniquely specify a session in your system, for example, to make reporting easier. This is a string. It will be present in APIs. This field is optional.
