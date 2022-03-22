@@ -13,7 +13,10 @@ There are 2 types of signature which this generator create. Refer to the respect
 4. You will need to enter your own SDK_Secret and App_Key found in your [Zoom Marketplace Account](https://marketplace.zoom.us). Do note that the SDK_Secret and App_Key between your meeting-SDK and video-SDK account are unique and NOT interexchangable.
 
 ## Generate vSDK Signature py script ##
-This refers to generate-vsdk-signature.py file. After downloading this repo, you can run it in your shell via 'python3 generate-vsdk-signature.py'
+This refers to generate-vsdk-signature.py file. 
+
+After downloading this repo, you can run it in your shell via 'python3 generate-vsdk-signature.py'
+
 The payload specification can be found on the [official zoom docs, auth for vSDK](https://marketplace.zoom.us/docs/sdk/video/auth/). Nonetheless I've included the snipplet below for easy reference
 
 > app_key is the SDK Key found in the App Dashboard.
@@ -54,7 +57,10 @@ The payload specification can be found on the [official zoom docs, auth for vSDK
 >}
 
 ## Generate mSDK Signature py script ##
-This refers to generate-msdk-signature.py file. After downloading this repo, you can run it in your shell via 'python3 generate-msdk-signature.py'
+This refers to generate-msdk-signature.py file. 
+
+After downloading this repo, you can run it in your shell via 'python3 generate-msdk-signature.py'
+
 The payload specification can be found on the [official zoom docs, auth for mSDK](https://marketplace.zoom.us/docs/sdk/native-sdks/auth/). Similarly I've included the snipplet below for easy reference
 >### Payload ###
 >The payload of a JWT contains the claims of the token, or the pieces of information being passed about the user and any metadata required.
