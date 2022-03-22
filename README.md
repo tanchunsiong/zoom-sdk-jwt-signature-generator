@@ -6,9 +6,11 @@ The cli script written in python helps developers quicky generate JWT token base
 There are 2 types of signature which this generator create. Refer to the respective section below for more details
 
 # Common feature across both scripts #
-1. Zoom uses EPOCH time to determine start and end/expire date of the token. By default, the generator uses current time as **start** and +48 hours later as **end / expiry**
-2. You will need to install the python library using the command 'pip3 install pyjwt'
-3. You will need to enter your own SDK_Secret and App_Key found in your [Zoom Marketplace Account](https://marketplace.zoom.us)
+1. Zoom uses EPOCH time to determine start and end/expire date of the token. By default, the generator uses 
+- current time as **start time** and 
+- +48 hours later as **end / expiry time**
+3. You will need to install the python library using the command 'pip3 install pyjwt'
+4. You will need to enter your own SDK_Secret and App_Key found in your [Zoom Marketplace Account](https://marketplace.zoom.us). Do note that the SDK_Secret and App_Key between your meeting-SDK and video-SDK account are unique and NOT interexchangable.
 
 ## Generate vSDK Signature py script ##
 This refers to generate-vsdk-signature.py file. After downloading this repo, you can run it in your shell via 'python3 generate-vsdk-signature.py'
