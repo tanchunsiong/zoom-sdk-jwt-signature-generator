@@ -1,9 +1,9 @@
 # zoom-sdk-jwt-signature-generator
 This python cli generates JWT Signature for Zoom Meeting SDK and Zoom Video SDK
 
-The cli script written in python helps developers quicky generate JWT token based on their SDK Key and SDK Secret.
+This cli script written in python helps developers quicky generate JWT token based on their App Key and SDK Secret.
 
-There are 2 types of signature which this generator create. Refer to the respective section below for more details
+There are 2 types of signature which this generator create. Refer to the respective sections below for more details
 
 # Common feature across both scripts #
 1. Zoom uses EPOCH time to determine start and end/expire date of the token. By default, the generator uses 
